@@ -1,0 +1,41 @@
+object Frame1: TFrame1
+  Size.Width = 506.000000000000000000
+  Size.Height = 430.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 506.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Client
+      Size.Width = 506.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Edit1
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Size.Width = 506.000000000000000000
+        Size.Height = 430.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

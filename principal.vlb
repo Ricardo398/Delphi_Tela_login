@@ -1,0 +1,12 @@
+﻿[Grid1]
+Coordinates=10,78,46,58
+
+[Layout1]
+Coordinates=66,78,60,36
+
+[DataModule1.DataSource1]
+Coordinates=237,1,169,36
+
+[DataModule1.FDQuery1]
+Coordinates=10,10,153,58
+

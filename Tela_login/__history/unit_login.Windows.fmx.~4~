@@ -1,0 +1,94 @@
+inherited form_login_Windows: Tform_login_Windows
+  Touch.InteractiveGestures = [DoubleTap]
+  DesignerMasterStyle = 0
+  inherited tab_principal: TTabControl
+    Sizes = (
+      617s
+      701s
+      617s
+      701s)
+    inherited tab_login: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited layout_login: TLayout
+        inherited GridPanelLayout1: TGridPanelLayout
+          inherited lay_login_logo: TLayout
+            inherited lbl_login: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited logo: TImageViewer
+              BackgroundFill.Kind = None
+              Viewport.Width = 387.000000000000000000
+              Viewport.Height = 98.000000000000000000
+            end
+          end
+          inherited lay_nao_cadastro: TLayout
+            inherited SpeedButton1: TSpeedButton
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited lay_nome_usuario: TLayout
+            inherited Edit1: TEdit
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+            end
+            inherited lbl_usuario: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited lay_senha: TLayout
+            inherited Edit2: TEdit
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+            end
+            inherited lbl_senha: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+      end
+    end
+    inherited tab_cadastro: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited layout_cadastro: TLayout
+        inherited GridPanelLayout2: TGridPanelLayout
+          inherited Layout2: TLayout
+            inherited label_cadastro: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited ImageViewer1: TImageViewer
+              Viewport.Width = 387.000000000000000000
+              Viewport.Height = 98.000000000000000000
+            end
+          end
+          inherited Layout4: TLayout
+            inherited SpeedButton3: TSpeedButton
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Layout5: TLayout
+            inherited Label3: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Layout6: TLayout
+            inherited Label4: TLabel
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited lay_topo: TLayout
+    inherited img_logo: TImageViewer
+      Viewport.Width = 125.000000000000000000
+      Viewport.Height = 109.000000000000000000
+    end
+    inherited btn_login: TSpeedButton
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited btn_cadastro: TSpeedButton
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

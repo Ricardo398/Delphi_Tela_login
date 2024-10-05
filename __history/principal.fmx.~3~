@@ -1,0 +1,12 @@
+object Frame1: TFrame1
+  Size.Width = 506.000000000000000000
+  Size.Height = 430.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 506.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

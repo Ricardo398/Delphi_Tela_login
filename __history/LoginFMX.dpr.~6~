@@ -1,0 +1,17 @@
+program LoginFMX;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  unit_login in 'Tela_login\unit_login.pas' {form_login},
+  uDatamodule in 'uDatamodule.pas' {DataModule1: TDataModule},
+  principal in 'principal.pas' {Frame1: TFrame};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(Tform_login, form_login);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

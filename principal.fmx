@@ -1,0 +1,23 @@
+object Frame1: TFrame1
+  Size.Width = 981.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 981.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Grid1: TGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 981.000000000000000000
+      Size.Height = 720.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 977.000000000000000000
+      Viewport.Height = 695.000000000000000000
+    end
+  end
+end
