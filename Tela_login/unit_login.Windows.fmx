@@ -28,7 +28,7 @@ inherited form_login_Windows: Tform_login_Windows
             end
           end
           inherited lay_nome_usuario: TLayout
-            inherited Edit1: TEdit
+            inherited edit_usuario_login: TEdit
               TextSettings.Font.StyleExt = {00060000000000000004000000}
             end
             inherited lbl_usuario: TLabel

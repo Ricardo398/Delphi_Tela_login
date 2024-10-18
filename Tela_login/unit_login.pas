@@ -32,10 +32,10 @@ type
     lbl_senha: TLabel;
     lbl_nao_cadastro: TLabel;
     logo: TImageViewer;
-    Edit1: TEdit;
+    edit_usuario_login: TEdit;
     Edit2: TEdit;
     Rectangle2: TRectangle;
-    Acessar: TSpeedButton;
+    btn_acessar: TSpeedButton;
     SpeedButton1: TSpeedButton;
     layout_cadastro: TLayout;
     GridPanelLayout2: TGridPanelLayout;
@@ -49,7 +49,7 @@ type
     lbl_jatemcadastro: TLabel;
     button_click_cadastro: TSpeedButton;
     lay_usuario: TLayout;
-    Edit3: TEdit;
+    edit_usuario_cadastro: TEdit;
     lbl_usuariocadastro: TLabel;
     lay_primeirasenha: TLayout;
     Edit4: TEdit;
@@ -62,6 +62,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure button_click_cadastroClick(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
+    procedure button_cadastrarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -70,6 +71,8 @@ type
 
 var
   form_login: Tform_login;
+  //nome_usuario_cadastro : string; //
+  array_cadastro: Array[1..5] of string;
 
 implementation
 
@@ -94,6 +97,18 @@ end;
 procedure Tform_login.SpeedButton1Click(Sender: TObject);
 begin
     tab_principal.ActiveTab := tab_cadastro
+end;
+
+procedure Tform_login.button_cadastrarClick(Sender: TObject);
+
+begin
+
+   array_cadastro[1] := edit_usuario_cadastro.Text;
+   if True then
+   ShowMessage('Alright');
+
+  //nome_usuario_cadastro := edit_usuario_cadastro.Text;//
+  //ShowMessage(nome_usuario_cadastro); //
 end;
 
 procedure Tform_login.button_click_cadastroClick(Sender: TObject);

@@ -1,134 +1,139 @@
 ﻿[img_logo]
 Visible=True
-Coordinates=467,211,60,51
+Coordinates=467,211,105,80
+ExplicitSubNodes=Owner.DesignInfo
 
 [lay_login_logo]
 Visible=True
-Coordinates=609,408,86,33
+Coordinates=609,408,97,36
 
 [layout_login]
-Coordinates=448,337,74,33
+Coordinates=448,337,84,36
 
 [lbl_senha]
-Coordinates=120,1,61,51
+Coordinates=120,1,70,58
 
 [logo]
-Coordinates=219,141,40,51
+Coordinates=219,141,45,58
 
 [Edit5]
-Coordinates=52,70,40,51
+Coordinates=52,70,44,58
 
 [lbl_login]
-Coordinates=467,141,56,51
+Coordinates=467,141,62,58
 
 [GridPanelLayout2]
-Coordinates=628,1,102,33
+Coordinates=628,1,118,36
 
 [Label1]
-Coordinates=170,159,46,51
-
-[Edit1]
-Coordinates=22,159,40,51
+Coordinates=170,159,53,58
 
 [lbl_usuariocadastro]
-Coordinates=317,71,112,51
+Coordinates=317,71,127,58
 
 [lay_topo]
-Coordinates=389,337,56,33
+Coordinates=389,337,63,36
+Visible=True
 
 [button_click_cadastro]
-Coordinates=467,71,123,51
+Coordinates=467,71,139,58
 
 [lay_primeirasenha]
-Coordinates=628,53,104,33
+Coordinates=628,53,120,36
 
 [GridPanelLayout1]
-Coordinates=628,105,102,33
+Coordinates=628,105,118,36
 
 [Edit4]
-Coordinates=219,71,40,51
+Coordinates=219,71,44,58
 
 [SpeedButton1]
-Coordinates=467,281,84,51
+Coordinates=467,281,96,58
 
 [Rectangle1]
-Coordinates=310,337,69,33
+Coordinates=310,337,80,36
 
 [lbl_jatemcadastro]
-Coordinates=0,0,101,51
+Coordinates=0,0,116,58
 
 [lay_cadastrar]
-Coordinates=221,337,80,33
+Coordinates=221,337,92,36
 
 [lay_nao_cadastro]
-Coordinates=628,157,101,33
+Coordinates=628,157,116,36
 
 [tab_login]
-Coordinates=152,337,60,33
+Coordinates=152,337,67,36
 
 [layout_cadastro]
-Coordinates=53,337,93,33
+Coordinates=53,337,105,36
 
 [lbl_usuario]
-Coordinates=317,211,69,51
+Coordinates=317,211,77,58
 
 [lay_jatemcadastro]
-Coordinates=628,209,104,33
+Coordinates=628,209,119,36
 
 [Lay_botao_acessar]
-Coordinates=628,261,109,33
+Coordinates=628,261,126,36
 
 [tab_principal]
-Coordinates=628,313,78,33
+Coordinates=628,313,88,36
 
 [logo_escrita]
-Coordinates=238,248,75,51
+Coordinates=238,248,84,58
 
 [lbl_primeirasenha]
-Coordinates=317,1,102,51
+Coordinates=317,1,116,58
 
 [lay_repitasenha]
-Coordinates=628,365,92,33
+Coordinates=628,365,106,36
 
 [button_cadastrar]
-Coordinates=71,159,98,51
-
-[Acessar]
-Coordinates=467,1,54,51
+Coordinates=71,159,111,58
 
 [btn_cadastro]
-Coordinates=60,248,79,51
+Coordinates=60,248,89,58
 
 [lay_usuario]
-Coordinates=530,408,71,33
+Coordinates=530,408,81,36
 
 [lay_logo]
-Coordinates=471,408,56,33
+Coordinates=471,408,63,36
 
 [lay_nome_usuario]
-Coordinates=775,1,104,33
+Coordinates=775,1,119,36
 
 [tab_cadastro]
-Coordinates=392,408,78,33
+Coordinates=392,408,89,36
 
 [btn_login]
-Coordinates=219,1,60,51
+Coordinates=219,1,67,58
 
 [label_cadastro]
-Coordinates=149,248,86,51
-
-[Edit3]
-Coordinates=11,248,40,51
+Coordinates=149,248,98,58
 
 [lbl_nao_cadastro]
-Coordinates=317,141,99,51
+Coordinates=317,141,113,58
 
 [Edit2]
-Coordinates=101,70,40,51
+Coordinates=101,70,44,58
 
 [lay_senha]
-Coordinates=323,408,64,33
+Coordinates=323,408,73,36
 
 [Rectangle2]
-Coordinates=244,408,69,33
+Coordinates=244,408,80,36
+
+[]
+Coordinates=145,377,91,36
+
+[btn_acessar]
+Coordinates=467,1,61,58
+
+[edit_usuario_login]
+Coordinates=22,159,44,58
+
+[edit_usuario_cadastro]
+Coordinates=11,248,44,58
 

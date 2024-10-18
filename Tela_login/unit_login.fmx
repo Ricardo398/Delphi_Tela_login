@@ -5,6 +5,7 @@ object form_login: Tform_login
   ClientHeight = 814
   ClientWidth = 617
   Fill.Kind = Solid
+  Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -15,7 +16,7 @@ object form_login: Tform_login
     Size.Width = 617.000000000000000000
     Size.Height = 725.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 1
     TabPosition = None
     Sizes = (
@@ -28,7 +29,7 @@ object form_login: Tform_login
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -415,7 +416,7 @@ object form_login: Tform_login
               Size.Height = 70.229034423828130000
               Size.PlatformDefault = False
               Stroke.Color = xFF00090F
-              object Acessar: TSpeedButton
+              object btn_acessar: TSpeedButton
                 Align = Center
                 Cursor = crHandPoint
                 StyledSettings = [Family, Style]
@@ -478,7 +479,7 @@ object form_login: Tform_login
             ParentShowHint = False
             ShowHint = True
             TabOrder = 3
-            object Edit1: TEdit
+            object edit_usuario_login: TEdit
               Touch.InteractiveGestures = [LongTap, DoubleTap]
               Align = Bottom
               TabOrder = 1
@@ -547,7 +548,7 @@ object form_login: Tform_login
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -967,7 +968,7 @@ object form_login: Tform_login
             ParentShowHint = False
             ShowHint = True
             TabOrder = 3
-            object Edit3: TEdit
+            object edit_usuario_cadastro: TEdit
               Touch.InteractiveGestures = [LongTap, DoubleTap]
               Align = Top
               TabOrder = 1
@@ -1095,6 +1096,7 @@ object form_login: Tform_login
               TextSettings.Font.Size = 22.000000000000000000
               TextSettings.FontColor = claWhite
               TextSettings.Trimming = None
+              OnClick = button_cadastrarClick
             end
           end
         end
