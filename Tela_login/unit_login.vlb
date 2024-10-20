@@ -16,9 +16,6 @@ Coordinates=120,1,70,58
 [logo]
 Coordinates=219,141,45,58
 
-[Edit5]
-Coordinates=52,70,44,58
-
 [lbl_login]
 Coordinates=467,141,62,58
 
@@ -43,9 +40,6 @@ Coordinates=628,53,120,36
 
 [GridPanelLayout1]
 Coordinates=628,105,118,36
-
-[Edit4]
-Coordinates=219,71,44,58
 
 [SpeedButton1]
 Coordinates=467,281,96,58
@@ -116,9 +110,6 @@ Coordinates=149,248,98,58
 [lbl_nao_cadastro]
 Coordinates=317,141,113,58
 
-[Edit2]
-Coordinates=101,70,44,58
-
 [lay_senha]
 Coordinates=323,408,73,36
 
@@ -136,4 +127,13 @@ Coordinates=22,159,44,58
 
 [edit_usuario_cadastro]
 Coordinates=11,248,44,58
+
+[edit_senha_cadastro]
+Coordinates=219,71,44,58
+
+[edit_repita_senha]
+Coordinates=52,70,44,58
+
+[edit_senha_login]
+Coordinates=101,70,44,58
 

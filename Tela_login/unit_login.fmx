@@ -16,7 +16,7 @@ object form_login: Tform_login
     Size.Width = 617.000000000000000000
     Size.Height = 725.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 1
     TabPosition = None
     Sizes = (
@@ -29,7 +29,7 @@ object form_login: Tform_login
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -427,6 +427,7 @@ object form_login: Tform_login
                 TextSettings.Font.Size = 22.000000000000000000
                 TextSettings.FontColor = claWhite
                 TextSettings.Trimming = None
+                OnClick = btn_acessarClick
               end
             end
           end
@@ -484,9 +485,9 @@ object form_login: Tform_login
               Align = Bottom
               TabOrder = 1
               TextSettings.Font.Size = 18.000000000000000000
-              Position.Y = 34.229034423828130000
+              Position.Y = 41.229034423828130000
               Size.Width = 391.000000000000000000
-              Size.Height = 81.000000000000000000
+              Size.Height = 74.000000000000000000
               Size.PlatformDefault = False
               StyledSettings = [Family]
             end
@@ -512,7 +513,7 @@ object form_login: Tform_login
             ParentShowHint = False
             ShowHint = True
             TabOrder = 2
-            object Edit2: TEdit
+            object edit_senha_login: TEdit
               Touch.InteractiveGestures = [LongTap, DoubleTap]
               Align = Bottom
               TabOrder = 2
@@ -548,7 +549,7 @@ object form_login: Tform_login
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -946,7 +947,7 @@ object form_login: Tform_login
               Text = ' Repita a senha'
               TabOrder = 0
             end
-            object Edit5: TEdit
+            object edit_repita_senha: TEdit
               Touch.InteractiveGestures = [LongTap, DoubleTap]
               Align = Top
               TabOrder = 1
@@ -1001,7 +1002,7 @@ object form_login: Tform_login
             ParentShowHint = False
             ShowHint = True
             TabOrder = 2
-            object Edit4: TEdit
+            object edit_senha_cadastro: TEdit
               Touch.InteractiveGestures = [LongTap, DoubleTap]
               Align = Top
               TabOrder = 2

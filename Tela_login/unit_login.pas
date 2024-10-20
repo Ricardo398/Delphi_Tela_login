@@ -33,7 +33,7 @@ type
     lbl_nao_cadastro: TLabel;
     logo: TImageViewer;
     edit_usuario_login: TEdit;
-    Edit2: TEdit;
+    edit_senha_login: TEdit;
     Rectangle2: TRectangle;
     btn_acessar: TSpeedButton;
     SpeedButton1: TSpeedButton;
@@ -52,17 +52,18 @@ type
     edit_usuario_cadastro: TEdit;
     lbl_usuariocadastro: TLabel;
     lay_primeirasenha: TLayout;
-    Edit4: TEdit;
+    edit_senha_cadastro: TEdit;
     lbl_primeirasenha: TLabel;
     lay_jatemcadastro: TLayout;
     Label1: TLabel;
-    Edit5: TEdit;
+    edit_repita_senha: TEdit;
     procedure btn_loginClick(Sender: TObject);
     procedure btn_cadastroClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure button_click_cadastroClick(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure button_cadastrarClick(Sender: TObject);
+    procedure btn_acessarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,13 +72,141 @@ type
 
 var
   form_login: Tform_login;
-  //nome_usuario_cadastro : string; //
-  array_cadastro: Array[1..5] of string;
+  nome_usuario_cadastro : string;
+  senha_usuario_cadastro : integer;
+  confirmacao_senha_cadastro : integer;
+  confirmacao_usuario_login : string;
+  confirmacao_senha_login : integer;
 
 implementation
 
 {$R *.fmx}
 {$R *.Windows.fmx MSWINDOWS}
+
+procedure Tform_login.btn_acessarClick(Sender: TObject);
+begin
+
+  if edit_usuario_login.Text = '' then
+    begin
+      showmessage('Por favor, insira o nome de usuario.');
+    end
+
+  else
+    begin
+      confirmacao_usuario_login := edit_usuario_login.Text;
+
+    if edit_usuario_login.Text <> nome_usuario_cadastro then
+      begin
+        ShowMessage('Usuário não cadastrado.')
+      end;
+
+    if confirmacao_usuario_login = nome_usuario_cadastro then
+    begin
+      if edit_senha_login.Text = '' then
+        begin
+          showmessage('Por favor, insira a senha numérica.');
+        end
+
+      else
+        begin
+          confirmacao_senha_login := StrToInt(edit_senha_login.Text);
+
+          if confirmacao_senha_login <> senha_usuario_cadastro then
+            begin
+              ShowMessage('Senha Incorreta.')
+            end
+
+          else
+            begin
+
+              if confirmacao_senha_login = senha_usuario_cadastro then
+                begin
+                  ShowMessage('Usuário logado com Sucesso')
+                end;
+
+            end;
+
+        end;
+
+
+    end;
+
+  end;
+end;
+
+
+procedure Tform_login.button_cadastrarClick(Sender: TObject);
+begin
+
+  if edit_usuario_cadastro.Text = '' then
+    begin
+      showmessage('Por favor, insira o nome de usuario.');
+    end
+
+  else
+    begin
+      nome_usuario_cadastro := edit_usuario_cadastro.text;
+
+  if edit_senha_cadastro.Text = '' then
+    begin
+      showmessage('Por favor, insira a senha numérica.');
+    end
+
+  else
+    begin
+    {if  edit_senha_cadastro.Text <> integer then
+      begin
+        ShowMessage('Insira somente números.');
+      end;
+    }
+      senha_usuario_cadastro := StrToInt(edit_senha_cadastro.Text);
+
+    if length(senha_usuario_cadastro.ToString) > 6 then
+      begin
+        showmessage('Por favor, insira somente 6 dígitos.');
+      end;
+
+    if length(senha_usuario_cadastro.ToString) < 6 then
+      begin
+        showmessage('Por favor, insira uma senha de 6 dígitos.');
+      end;
+
+    if length(senha_usuario_cadastro.ToString) = 6 then
+      begin
+
+        confirmacaO_senha_cadastro := StrToInt(edit_senha_cadastro.Text);
+
+      if edit_repita_senha.Text = '' then
+        begin
+          showmessage('Por favor, repita a senha numérica para cadastro.');
+        end
+
+      else
+         begin
+
+         if edit_senha_cadastro.Text = edit_repita_senha.Text then
+          begin
+            ShowMessage('Usuário cadastrado com Sucesso')
+          end;
+
+         if  edit_senha_cadastro.Text <> edit_repita_senha.Text then
+          begin
+            ShowMessage('A senha deve ser exatamente a mesma.')
+          end;
+
+          end;
+
+
+
+      end;
+
+    end;
+
+
+
+end;
+end;
+
 
 procedure Tform_login.btn_cadastroClick(Sender: TObject);
 begin
@@ -97,18 +226,6 @@ end;
 procedure Tform_login.SpeedButton1Click(Sender: TObject);
 begin
     tab_principal.ActiveTab := tab_cadastro
-end;
-
-procedure Tform_login.button_cadastrarClick(Sender: TObject);
-
-begin
-
-   array_cadastro[1] := edit_usuario_cadastro.Text;
-   if True then
-   ShowMessage('Alright');
-
-  //nome_usuario_cadastro := edit_usuario_cadastro.Text;//
-  //ShowMessage(nome_usuario_cadastro); //
 end;
 
 procedure Tform_login.button_click_cadastroClick(Sender: TObject);
